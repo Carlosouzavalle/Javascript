@@ -32,21 +32,67 @@ console.log(typeof meuNull);
 
 const meuNumero = "123";
 
-const meuNovoNumero = Number(meuNumero)
+const meuNovoNumero = Number(meuNumero);
 
 //O number pega o content da variavel e se for possivel ele converte
 
-console.log(typeof meuNumero)
-console.log(typeof meuNovoNumero)
+console.log(typeof meuNumero);
+console.log(typeof meuNovoNumero);
 
 // estruturas de condição if, else, else if
 
-const idade = 20
-const idadeUsuario = 21
-if(idadeUsuario < idade) 
+
+const idadeUsuario = 16;
+
+if(idadeUsuario < 14) 
 {
-    return console.log("Você é menor de idade")
+    console.log("criança");
 } 
-else {
-    console.log("Pode passar")
+else if(idadeUsuario < 18) {
+    console.log("adolecente");
 }
+else {
+    console.log("Pode passar");
+}
+
+//SWITCH    
+
+const fruta = "manga";
+
+switch(fruta) {
+    case "banana":
+        console.log("banana é a fruta");
+        break;
+    case "manga":
+        console.log("manga é a fruta");
+        break;  
+    default: 
+        console.log("fruta não encontrada");
+}
+
+//LAÇOS DE REPETIÇÃO
+
+//contador, condição de limite, incremento
+for(let i = 0; i < 5; i++) {
+    console.log("o valor de pedidos é " + i);
+} 
+
+
+//WHILE 
+let k = 0;
+
+while (k < 5) {
+    console.log("foram vendidos " + k)
+    k++;
+}
+
+
+//do while
+let j = 0;
+
+do {
+
+    console.log("mais coisas foram vendidas " + j)
+    j++
+
+} while(j < 5);

@@ -25,4 +25,4 @@ console.log(10 > 5 && 20 < 30)
 console.log(10 > 11 || 20 < 30)
 
 // && só vai considerar verdadeiro se as duas solicitações forem verdadeiras
-// || se ao menos uma for verdadeira ele passa
+// || se ao menos uma for verdadeira ele passa  
