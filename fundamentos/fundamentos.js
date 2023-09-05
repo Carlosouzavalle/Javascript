@@ -29,3 +29,24 @@ console.log(typeof meuArray);
 console.log(typeof meuNull);
 
 //O javascript interpreta varios dados como object 
+
+const meuNumero = "123";
+
+const meuNovoNumero = Number(meuNumero)
+
+//O number pega o content da variavel e se for possivel ele converte
+
+console.log(typeof meuNumero)
+console.log(typeof meuNovoNumero)
+
+// estruturas de condição if, else, else if
+
+const idade = 20
+const idadeUsuario = 21
+if(idadeUsuario < idade) 
+{
+    return console.log("Você é menor de idade")
+} 
+else {
+    console.log("Pode passar")
+}
