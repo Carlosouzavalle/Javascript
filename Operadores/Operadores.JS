@@ -1,8 +1,3 @@
-// let e const 
-let x = 10; // veio para substituir o var
-const y = 5; // um valor que não muda
-
-//obs: sempre de preferencia por usar o const 
 
 //OPERADORES ARITMÉTICOS 
 console.log(x + y);
