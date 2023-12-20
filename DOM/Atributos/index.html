@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .noticia {
+            margin: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px black;
+            background-color: rgb(240, 240, 240);
+            border: 1px solid gray;
+            width: 400px;
+
+        }
+
+        img {
+            height: 100px;  
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="noticia">
+        <h1>noticia</h1>
+        <h3 id="sumario">sumario da noticia</h3>
+        <img src="https://play-lh.googleusercontent.com/8LYEbSl48gJoUVGDUyqO5A0xKlcbm2b39S32xvm_h-8BueclJnZlspfkZmrXNFX2XQ" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, recusandae! Cupiditate dignissimos aliquam</p>
+    </div>
+
+    <script>
+        let e = document.querySelector('h3')
+
+        // hasAttribute
+        if(e.hasAttribute('class')) 
+        {       
+            console.log('sim')
+        } else {
+            console.log('não')
+        } 
+
+        //getAttribute
+        console.log(e.getAttribute('id'))
+
+        //setAttribute
+        e.setAttribute('title', 'titulo do h3')
+
+
+        //removeAttribute
+        let i = document.querySelector('img')
+        i.removeAttribute('src')
+    </script>
+</body>
+</html>

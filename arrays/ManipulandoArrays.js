@@ -17,3 +17,23 @@ console.log(numeroPar)
 const numerosPares = numeros.filter((num) => num % 2 === 0)
 console.log(numerosPares)
 // filter ele vai filtrar todos os elementos que corespondem
+
+
+let clientes = [
+    {Nome: 'Carlos', idade: 25},
+    {Nome: 'Ana', idade: 20},
+    {Nome: 'Bia', idade: 19}
+]
+
+console.log(clientes[2])
+console.log(clientes[2].Nome)
+
+// utilizando forEach co array
+// clientes.forEach(cliente => {
+//     console.log(`O(A) Cliente ${cliente.Nome} tem ${cliente.idade} anos de idade`)
+// })
+
+
+// for (let i = 0; i < clientes.length; i++) {
+//     console.log(`Sr(a) ${clientes[i].Nome} tem ${clientes[i].idade} anos de idade`)
+// }

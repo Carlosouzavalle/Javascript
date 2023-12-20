@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p-1 {
+            background-color: yellow;
+        }
+
+        .p-2 {
+            background-color: green;
+        }
+
+        .espaco {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <script>
+        let p = document.querySelector('p')
+        // p.className = 'p-2'
+
+
+        // p.classList.add('p-2')
+        // p.classList.add('espaco')
+        // p.classList.remove('espaco')
+        p.classList.toggle('espaco') // se existir ele remove se não existir ele add
+        
+        if(p.classList.contains('espaco')) {
+            console.log('sim tem espaco')
+        } else {
+            console.log('não tem espaco')
+        }
+
+    </script>
+</body>
+</html>

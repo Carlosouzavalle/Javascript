@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        p {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Dentro da Div
+    </div>
+
+    <script>
+        let div = document.querySelector('.container')
+
+       //insertAdjecentText
+       div.insertAdjacentText('beforebegin', 'AAA')
+       div.insertAdjacentText('afterbegin', 'BBB')
+       div.insertAdjacentText('beforeend', 'CCC')
+       div.insertAdjacentText('afterend', 'DDD')
+
+       //insertAdjecentHTML
+       div.insertAdjacentHTML('beforebegin', '<p>AAA</p>')
+       div.insertAdjacentHTML('afterbegin', '<p>BBB</p>')
+       div.insertAdjacentHTML('beforeend', '<p>CCC</p>')
+       div.insertAdjacentHTML('afterend', '<p>DDD</p>')
+
+
+       //createElement 
+       let paragrafo = document.createElement('p')
+       paragrafo.innerText = 'Create Element'
+
+       div.insertAdjacentElement('beforebegin', paragrafo)
+    </script>
+</body>
+</html>

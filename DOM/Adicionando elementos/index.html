@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .caixa {
+            font-family: serif;
+            margin: 50px auto;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        .alerta {
+            padding: 5px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <p>Nesta div existe apenas um paragrafo</p>
+    </div>
+
+    <button onclick="executar()">
+        Clicar
+    </button>
+    <script>
+
+        function executar() 
+        {
+                if(executar = true)
+                {
+                    let novo_elemento = document.createElement('p')
+                    novo_elemento.className = 'alerta'
+                    novo_elemento.innerText = 'Esta é uma mensagem de alerta'
+                    let e = document.querySelector('.caixa')
+                    e.appendChild(novo_elemento)  
+                }
+        }
+
+    </script>
+</body>
+</html>

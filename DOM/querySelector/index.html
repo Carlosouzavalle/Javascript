@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #segundo {
+            color: blue;
+        }
+
+        ul > li:last-child {
+            color: rgb(36, 255, 36);
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p id="primeiro">paragrafo 1</p>
+    <p id="segundo">paragrafo 2</p>
+    <div>
+        texto dentro da div 1
+    </div>
+    <div>
+        texto dentro da div 2
+    </div>
+
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+</body>
+
+<script>
+    let e = document.querySelector('#segundo');
+    e.style.backgroundColor = "red"
+    // vai buscar pelo seletor
+
+    let e2 = document.querySelector('#primeiro')
+    e2.innerHTML = "terceiro <u>paragrafo</u>"
+    e.innerText = "primeiro paragrafo"
+    console.log(e.outerHTML)
+
+    
+
+</script>
+</html>
+
+<!-- innerHTML - ele vai mostrar a tag
+    InnerText - ele vai mostrar o conteudo da tag
+    outerHTML - ele vai mostrar todo o elemento
+
+
+-->

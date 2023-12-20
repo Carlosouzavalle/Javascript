@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        p {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Dentro da Div
+    </div>
+
+    <script>
+        let div = document.querySelector('.container')
+
+        //texto antes do div
+        div.before('AAA')
+        div.prepend('BBB')
+        div.append('CCC')
+        div.after('DDD')
+    </script>
+</body>
+</html>

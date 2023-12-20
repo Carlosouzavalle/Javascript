@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            margin: 50px auto;
+        }
+
+        .centrar {
+            text-align: center;
+        }
+    </style>    
+</head>
+<body>
+    <div class="centrar">
+        <h1>Texto em HTML</h1>
+        <button onclick="alterar()">Click</button>
+        <p>aqui tbm pode cliclar</p>
+    </div>
+</body>
+<script>
+    document.querySelector('p').onclick = function() {
+        document.querySelector('p').textContent = "texto alterado no paragrafo"
+    }
+
+    function alterar() {
+        document.querySelector('h1').textContent = "texto alterado no h1"
+    }
+
+</script>
+</html>

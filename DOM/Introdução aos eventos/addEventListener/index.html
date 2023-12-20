@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+</head>
+<body>
+    <h1 id="titulo_1">Titulo 1</h1>
+    <h1 id="titulo_2">Titulo 2</h1>
+    
+    <button id="add">Add</button>
+    <button id="botao">Execute</button>
+    <button id="remove">Remove</button>
+    
+    
+    <script>
+        document.querySelector("#add").addEventListener("click", add_events)
+        document.querySelector("#remove").addEventListener("click", remove_event)
+
+        function add_events()
+        {
+            let e = document.querySelector("#botao")
+            e.addEventListener("click", execute_1)
+            e.addEventListener("click", execute_2)  
+        }
+
+        function execute_1() 
+        {
+            let seconds = new Date()
+            document.querySelector("#titulo_1").textContent = seconds.getSeconds()
+        }
+
+        function execute_2()
+        {
+            let minutes = new Date()
+            document.querySelector("#titulo_2").textContent = minutes.getMinutes()
+        }
+
+        function remove_event()
+        {
+            document.querySelector("#botao").removeEventListener("click", execute_1)
+        }
+
+    </script>
+</body>
+</html>
