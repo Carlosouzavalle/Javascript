@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="caixa_texto">
+    <p>Tenho que escrever 'carlos'</p>
+
+
+    <script>
+        let elemento = document.querySelector("#caixa_texto")
+
+        // elemento.addEventListener("keydown", (event) => {
+        //     var value = event.target.value
+        //     if(value == 'carlos') {
+        //         document.querySelector('p').style.display = 'none'
+        //     } else {
+        //         document.querySelector('p').style.display = 'block'
+        //     }
+        // })
+
+        elemento.addEventListener("keydown", (e) => {
+            if(e.key == 'a')
+            {
+                e.preventDefault()
+            }
+        })
+    </script>
+</body>
+</html>
