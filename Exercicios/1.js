@@ -1,11 +1,6 @@
-// Variáveis e Tipos de Dados:
+// Exercício 1: Imprimir Nome
+// Escreva um programa que imprime o seu nome no console.
 
-// Declare uma variável chamada nome e atribua a ela o seu nome.
-// Declare uma variável chamada idade e atribua a ela a sua idade.
-// Declare uma variável chamada altura e atribua a ela a sua altura em metros.
 
-const Nome = 'Carlos'
-const Idade = 25
-const Altura = 1.70
-
-console.log(Nome, Idade, Altura)
+const nome = 'Carlos'
+console.log(nome)

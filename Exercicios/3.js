@@ -1,17 +1,10 @@
-// Condicionais:
+// Exercício 3: Verificar Maioridade
+// Escreva um programa que verifica se uma pessoa é maior de idade (18 anos ou mais).
 
-// Crie uma função chamada maiorNumero que recebe dois números como argumentos e retorna o maior deles.
-// Crie uma função chamada idadePermitida que recebe a idade como argumento e retorna "Permitido" se a idade for maior ou igual a 18, caso contrário retorna "Não permitido".
+const IDADE = 14
 
-
-function maiorNumero(a , b) {
-    if(a > b) 
-        {
-            console.log(`O numero ${a} é maior que ${b}`)
-        } else {
-            console.log(`Ele não é maior`)
-        }
+if(IDADE > 18) {
+    console.log('Você tem mais de 18 anos')
+} else {
+    console.log('sua idade é abaixo de 18')
 }
-
-//console.log(maiorNumero()); // Chama a função com os valores padrão
-console.log(maiorNumero(5, 3)); // Chama a função com os valores específicos
