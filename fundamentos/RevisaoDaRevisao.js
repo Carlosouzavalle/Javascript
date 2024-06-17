@@ -33,6 +33,13 @@
 
 
 
+
+
+
+
+
+
+
 // CICLO WHILE
 
 
@@ -52,6 +59,9 @@
 // } while (numero <= 10);
 
 // vai ler prineiro o codigo e só depois a condição 
+
+
+
 
 
 
@@ -82,6 +92,9 @@
 
 
 
+
+
+
 //SWITCH
 
 // let valor = 10
@@ -95,6 +108,10 @@
 //     default:
 //         console.log('valor n encontrado')
 // }
+
+
+
+
 
 
 
@@ -133,9 +150,20 @@
 
 
 
-function executar() {
-    let nome = 'carlos'
-    console.log(nome)
-}
-executar()
+// function executar() {
+//     let nome = 'carlos'
+//     console.log(nome)
+// }
+
+
+
+// {
+//     var nome = 'carlos'
+//     console.log(nome)
+// }
+
+
+// executar()
 console.log(nome)
+
+
