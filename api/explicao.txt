@@ -1,0 +1,8 @@
+# API, REST E REST FULL
+
+Cliente (Client)
+Garçom (pedidos, levar seus pedidos) = (API)
+Cozinha (Servidor)
+
+
+API - application programming interface - é um c0njunto de rotinas e padroes que uma aplicação fornece para a gente
